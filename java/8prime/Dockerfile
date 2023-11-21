@@ -20,7 +20,7 @@
 # SOFTWARE.
 #
 
-FROM        --platform=$TARGETOS/$TARGETARCH azul/prime:
+FROM        --platform=$TARGETOS/$TARGETARCH azul/prime:8
 
 LABEL       author="Matthew Penner" maintainer="matthew@pterodactyl.io"
 
