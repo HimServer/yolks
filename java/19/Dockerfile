@@ -20,7 +20,7 @@
 # SOFTWARE.
 #
 
-FROM        --platform=$TARGETOS/$TARGETARCH eclipse-temurin:19-jdk-jammy
+FROM        --platform=$TARGETOS/$TARGETARCH azul/zulu-openjdk:21-latest
 
 LABEL       author="Matthew Penner" maintainer="matthew@pterodactyl.io"
 
