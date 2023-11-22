@@ -17,16 +17,13 @@ jobs:
       matrix:
         tag:
           - 8
-          - 8j9
+          - 8prime
           - 11
-          - 11j9
-          - 16
+          - 11prime
           - 17
-          - 17j9
-          - 18
-          - 18j9
-          - 19
-          - 19j9
+          - 17prime
+          - 21
+          - 21prime
     steps:
       - uses: actions/checkout@v3
       - uses: docker/setup-qemu-action@v2
