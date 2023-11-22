@@ -2,6 +2,7 @@
 
 This is fork of Yolks for java for use using azul zulu jdks
 Due to this thing is not fully tested, bugs may occer
+
 我們這邊提供最新的Azul Zulu jdk 給pterodactyl使用
 
 All of these images are available for `linux/amd64` and `linux/arm64` versions, unless otherwise specified, to use
@@ -18,21 +19,21 @@ is tagged correctly.
 
 * [`java`](https://github.com/pterodactyl/yolks/tree/master/java)
   * [`java8 - Azul Zulu Core`](https://github.com/pterodactyl/yolks/tree/master/java/8)
-    * `ghcr.io/himserver/yolks:java_8`
+    * `ghcr.io/himserver/yolks:java_8` 
   * [`java8 - Azul Zulu Prime`](https://github.com/pterodactyl/yolks/tree/master/java/8-prime)
-    * `ghcr.io/himserver/yolks:java_8-prime`
+    * `ghcr.io/himserver/yolks:java_8-prime` (建置中)
   * [`java11 - Azul Zulu Core`](https://github.com/pterodactyl/yolks/tree/master/java/11)
     * `ghcr.io/himserver/yolks:java_11`
   * [`java11 - Azul Zulu Prime`](https://github.com/pterodactyl/yolks/tree/master/java/11-prime)
-    * `ghcr.io/himserver/yolks:java_11-prime`
+    * `ghcr.io/himserver/yolks:java_11-prime` (建置中)
   * [`java17 - Azul Zulu Core`](https://github.com/HimServer/yolks/tree/master/java/17)
     * `ghcr.io/himserver/yolks:java_17`
   * [`java17 - Azul Zulu Prime`](https://github.com/HimServer/yolks/tree/master/java/17-prime)
-    * `ghcr.io/himserver/yolks:java_17-prime`
+    * `ghcr.io/himserver/yolks:java_17-prime` (建置中)
   * [`java21 - Azul Zulu Core`](https://github.com/HimServer/yolks/tree/master/java/21)
     * `ghcr.io/himserver/yolks:java_21`
   * [`java21 - Azul Zulu Prime`](https://github.com/HimServer/yolks/tree/master/java/21-prime)
-    * `ghcr.io/himserver/yolks:java_21-prime`
+    * `ghcr.io/himserver/yolks:java_21-prime` (建置中)
 
 ### Installation Images
 
