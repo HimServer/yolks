@@ -40,7 +40,7 @@ is tagged correctly.
   * [`java17 - Azul Zulu Core`](https://github.com/HimServer/yolks/tree/master/java/17)
     * `ghcr.io/himserver/yolks:java_17`
   * [`java17 - Azul Zulu Prime`](https://github.com/HimServer/yolks/tree/master/java/17-prime)
-    * `ghcr.io/himserver/yolks:java_17j9`
+    * `ghcr.io/himserver/yolks:java_17-prime`
   * [`java21 - Azul Zulu Core`](https://github.com/HimServer/yolks/tree/master/java/21)
     * `ghcr.io/himserver/yolks:java_21`
   * [`java21 - Azul Zulu Prime`](https://github.com/HimServer/yolks/tree/master/java/21-prime)
