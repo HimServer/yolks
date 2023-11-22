@@ -34,7 +34,7 @@ jobs:
         with:
           registry: ghcr.io
           username: xx445469
-          password: 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 
+          password: ${{ secrets.REGISTRY_TOKEN }}
       - uses: docker/build-push-action@v4
         with:
           context: ./java
