@@ -34,7 +34,7 @@ jobs:
         with:
           registry: ghcr.io
           username: ${{ github.repository_owner }}
-          password: ${{ secrets.REGISTRY_TOKEN }}
+          password: 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
       - uses: docker/build-push-action@v4
         with:
           context: ./java
