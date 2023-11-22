@@ -24,7 +24,7 @@ FROM        --platform=$TARGETOS/$TARGETARCH azul/prime:11
 
 LABEL       author="Matthew Penner" maintainer="matthew@pterodactyl.io"
 
-LABEL       org.opencontainers.image.source="https://github.com/pterodactyl/yolks"
+LABEL       org.opencontainers.image.source="https://github.com/HimServer/yolks/"
 LABEL       org.opencontainers.image.licenses=MIT
 
 RUN 		apt-get update -y \
