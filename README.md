@@ -34,11 +34,3 @@ is tagged correctly.
     * `ghcr.io/himserver/yolks:java_21`
   * [`java21 - Azul Zulu Prime`](https://github.com/HimServer/yolks/tree/master/java/21-prime)
     * `ghcr.io/himserver/yolks:java_21-prime`
-
-### Installation Images
-
-* [`alpine-install`](https://github.com/pterodactyl/yolks/tree/master/installers/alpine)
-  * `ghcr.io/pterodactyl/installers:alpine`
-
-* [`debian-install`](https://github.com/pterodactyl/yolks/tree/master/installers/debian)
-  * `ghcr.io/pterodactyl/installers:debian`
