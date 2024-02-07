@@ -29,7 +29,14 @@ LABEL       org.opencontainers.image.licenses=MIT
 
 RUN 		apt-get update -y
 
-RUN 		DEBIAN_FRONTEND=noninteractive TZ=Etc/UTC apt-get -y install tzdata
+RUN timezone=$(timedatectl | grep "Time zone:" | awk '{print $3}') \
+    && if [ -z "$timezone" ]; then \
+           export TZ=Etc/UTC; \
+       else \
+           export TZ=$timezone; \
+       fi
+
+RUN 		DEBIAN_FRONTEND=noninteractive apt-get -y install tzdata
 
 RUN 		apt-get update -y \
  			&& apt-get install -y locales-all lsof curl ca-certificates openssl git tar sqlite3 fontconfig libfreetype6 tzdata iproute2 libstdc++6 \
