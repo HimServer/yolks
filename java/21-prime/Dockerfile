@@ -29,11 +29,21 @@ LABEL       org.opencontainers.image.licenses=MIT
 
 RUN 		apt-get update -y
 
-RUN 		DEBIAN_FRONTEND=noninteractive TZ=$(timedatectl | grep "Time zone:" | awk '{print $3}') apt-get -y install tzdata
+RUN 		DEBIAN_FRONTEND=noninteractive TZ=Etc/UTC apt-get -y install tzdata
 
 RUN 		apt-get update -y \
  			&& apt-get install -y locales-all lsof curl ca-certificates openssl git tar sqlite3 fontconfig libfreetype6 tzdata iproute2 libstdc++6 \
  			&& useradd -d /home/container -m container
+
+RUN apt-get update -y \
+    && apt-get install -y locales \
+    && locale-gen en_US.UTF-8 \
+    && update-locale LANG=en_US.UTF-8
+
+ENV LANG en_US.UTF-8  
+ENV LANGUAGE en_US:en  
+ENV LC_ALL en_US.UTF-8
+
 
 USER        container
 ENV         USER=container HOME=/home/container
