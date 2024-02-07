@@ -29,11 +29,10 @@ LABEL       org.opencontainers.image.licenses=MIT
 
 RUN 		apt-get update -y
 
-RUN timezone=$(timedatectl | grep "Time zone:" | awk '{print $3}') \
-    && if [ -z "$timezone" ]; then \
+RUN TZ=$(timedatectl | grep "Time zone:" | awk '{print $3}') \
+    # 检查TZ变量是否为空，如果为空，则将其设置为Etc/UTC
+    && if [ -z "$TZ" ]; then \
            export TZ=Etc/UTC; \
-       else \
-           export TZ=$timezone; \
        fi
 
 RUN 		DEBIAN_FRONTEND=noninteractive apt-get -y install tzdata
