@@ -28,7 +28,9 @@ LABEL       org.opencontainers.image.source="https://github.com/HimServer/yolks/
 LABEL       org.opencontainers.image.licenses=MIT
 
 RUN 		apt-get update -y
-RUN 		DEBIAN_FRONTEND=noninteractive ln -fs /usr/share/zoneinfo/LocalTime /etc/localtime
+
+RUN 		DEBIAN_FRONTEND=noninteractive TZ=timedatectl | grep "Time zone:" apt-get -y install tzdata
+
 RUN 		apt-get update -y \
  			&& apt-get install -y locales-all lsof curl ca-certificates openssl git tar sqlite3 fontconfig libfreetype6 tzdata iproute2 libstdc++6 \
  			&& useradd -d /home/container -m container
