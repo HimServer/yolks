@@ -2,7 +2,7 @@
 
 This is fork of Yolks for java for use using azul zulu jdks
 
-Due to this thing is not fully tested, bugs may occer
+Due to this thing is not fully tested, bugs may occer(this only applys on azul zulu prime/zing)
 
 我們這邊提供最新的Azul Zulu jdk 給pterodactyl使用
 
