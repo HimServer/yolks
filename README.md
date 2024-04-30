@@ -18,14 +18,14 @@ is tagged correctly.
 ## Available Images
 
 
-* [`java`](https://github.com/pterodactyl/yolks/tree/master/java)
-  * [`java8 - Azul Zulu Core`](https://github.com/pterodactyl/yolks/tree/master/java/8)
+* [`java`](https://github.com/HimServer/yolks/tree/master/java)
+  * [`java8 - Azul Zulu Core`](https://github.com/HimServer/yolks/tree/master/java/8)
     * `ghcr.io/himserver/yolks:java_8` 
-  * [`java8 - Azul Zulu Prime`](https://github.com/pterodactyl/yolks/tree/master/java/8-prime)
+  * [`java8 - Azul Zulu Prime`](https://github.com/HimServer/yolks/tree/master/java/8-prime)
     * `ghcr.io/himserver/yolks:java_8-prime`
-  * [`java11 - Azul Zulu Core`](https://github.com/pterodactyl/yolks/tree/master/java/11)
+  * [`java11 - Azul Zulu Core`](https://github.com/HimServer/yolks/tree/master/java/11)
     * `ghcr.io/himserver/yolks:java_11`
-  * [`java11 - Azul Zulu Prime`](https://github.com/pterodactyl/yolks/tree/master/java/11-prime)
+  * [`java11 - Azul Zulu Prime`](https://github.com/HimServer/yolks/tree/master/java/11-prime)
     * `ghcr.io/himserver/yolks:java_11-prime`
   * [`java17 - Azul Zulu Core`](https://github.com/HimServer/yolks/tree/master/java/17)
     * `ghcr.io/himserver/yolks:java_17`
