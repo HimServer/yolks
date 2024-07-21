@@ -4,7 +4,7 @@ This is fork of Yolks for java for use using azul zulu jdks
 
 Due to this thing is not fully tested, bugs may occer(this only applys on azul zulu prime/zing)
 
-我們這邊提供最新的Azul Zulu jdk 給pterodactyl使用
+我們這邊提供最新的Azul Zulu jdk(LTS) 給pterodactyl使用
 
 All of these images are available for `linux/amd64` and `linux/arm64` versions, unless otherwise specified, to use
 these images on an arm64 system, no modification to them or the tag is needed, they should just work.
