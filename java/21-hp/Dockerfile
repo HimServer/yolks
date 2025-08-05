@@ -6,8 +6,6 @@ LABEL org.opencontainers.image.licenses="Apache-2.0"
 
 ENV JAVA_HOME=/opt/java/openjdk
 ENV PATH=$JAVA_HOME/bin:$PATH
-
-# Locale & timezone
 ENV LANG='en_US.UTF-8' LANGUAGE='en_US:en' LC_ALL='en_US.UTF-8'
 ENV TZ=Asia/Taipei
 
@@ -53,14 +51,16 @@ RUN set -eux; \
     ldconfig; \
     java -Xshare:dump || true
 
-# 建立 container 使用者
+# 建立容器用戶
 RUN useradd -d /home/container -m container
 
+# 複製 entrypoint.sh 並設定權限（此處還是 root）
+COPY entrypoint.sh /entrypoint.sh
+RUN chmod +x /entrypoint.sh
+
+# 切換到非 root 用戶與目錄
 USER container
 ENV USER=container HOME=/home/container
 WORKDIR /home/container
-
-COPY ./entrypoint.sh /entrypoint.sh
-RUN chmod +x /entrypoint.sh
 
 CMD [ "/bin/bash", "/entrypoint.sh" ]
