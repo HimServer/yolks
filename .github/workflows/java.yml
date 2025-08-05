@@ -25,6 +25,7 @@ jobs:
           - 21
           - 21-prime
           - 21-ee
+          - 21-hp
     steps:
       - uses: actions/checkout@v3
       - uses: docker/setup-qemu-action@v2
